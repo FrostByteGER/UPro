@@ -4,22 +4,8 @@ using UnrealBuildTool;
 
 public class Pro : ModuleRules
 {
-	public Pro(TargetInfo Target)
+	public Pro(ReadOnlyTargetRules TargetRules) : base(TargetRules)
 	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
-
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
-
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-
-		PrivateDependencyModuleNames.Add("OnlineSubsystem");
-		PrivateDependencyModuleNames.Add("OnlineSubsystemNull");
-
-		if ((Target.Platform == UnrealTargetPlatform.Win32) || (Target.Platform == UnrealTargetPlatform.Win64) || (Target.Platform == UnrealTargetPlatform.Linux))
-		{
-			DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
-		}
-
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Paper2D" });
 	}
 }

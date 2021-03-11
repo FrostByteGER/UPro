@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.15",
+	"EngineAssociation": "4.26",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -20,11 +20,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "Substance",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/offers/2f6439c2f9584f49809d9b13b16c2ba4"
-		},
-		{
 			"Name": "SoundVisualizations",
 			"Enabled": true
 		},
@@ -35,11 +30,14 @@
 		{
 			"Name": "OnlineFramework",
 			"Enabled": true
+		},
+		{
+			"Name": "EditorDiscordRichPresence",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
 		"Android",
-		"HTML5",
 		"WindowsNoEditor"
 	]
 }
